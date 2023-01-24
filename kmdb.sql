@@ -134,12 +134,37 @@ create table top_cast (
     character_name text
 );
 
+drop table if exists actor;
+create table actor (
+    actor_id integer primary key autoincrement,
+    actor_name text,
+    movie_title text
+);
+
+INSERT INTO actor (actor_name, movie_title)
+    VALUES ("Christian Bale","Batman Begins");
+
+INSERT INTO actor (actor_name, movie_title)
+    VALUES ("Christian Bale","The Dark Knight");
+
+INSERT INTO actor (actor_name, movie_title)
+    VALUES ("Christian Bale","The Dark Knight Rises");
+
+INSERT INTO actor (actor_name, movie_title)
+    VALUES ("Christian Bale","Amsterdam");
+
+INSERT INTO actor (actor_name, movie_title)
+    VALUES ("Christian Bale","Ford vs ferrari");
+
+
+
+
 INSERT INTO movies(movie_title, year_released, mpaa_ratings, studio_info)
     VALUES ("Batman Begins", 2005,"PG-13","Warner Bros.");
 INSERT INTO movies(movie_title, year_released, mpaa_ratings, studio_info) 
    VALUES ("The Dark Knight", 2008,"PG-13","Warner Bros.");
 INSERT INTO movies(movie_title, year_released, mpaa_ratings, studio_info) 
-   Values ("The Dark Knight Rises", 2012,"PG-13","Warner Bros.");
+   VALUES ("The Dark Knight Rises", 2012,"PG-13","Warner Bros.");
 
 INSERT INTO top_cast (movie_id, actor_name,character_name)
     VALUES (1, "Christian Bale", "Bruce Wayne");
