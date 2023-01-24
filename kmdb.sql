@@ -158,7 +158,6 @@ INSERT INTO actor (actor_name, movie_title)
 
 
 
-
 INSERT INTO movies(movie_title, year_released, mpaa_ratings, studio_info)
     VALUES ("Batman Begins", 2005,"PG-13","Warner Bros.");
 INSERT INTO movies(movie_title, year_released, mpaa_ratings, studio_info) 
